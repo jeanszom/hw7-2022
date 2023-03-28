@@ -10,8 +10,7 @@ window.addEventListener("load", function() {
 document.querySelector("#play").addEventListener("click", function() {
 	video.play();
 	console.log("Play Video");
-	let volumeOut = document.querySelector("#volume").innerHTML = (video.volume*100) + "%"
-
+	let volumeOut = document.querySelector("#volume").innerHTML = (video.volume*100) + "%";
 });
 
 document.querySelector("#pause").addEventListener("click", function() {
