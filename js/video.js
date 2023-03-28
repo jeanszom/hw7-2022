@@ -5,12 +5,13 @@ window.addEventListener("load", function() {
 	video=document.querySelector(".video");
 	console.log("Good job opening the window");
 	video.load();
-	let volumeOut = document.querySelector("#volume").innerHTML = (video.volume*100) + "%"
 });
 
 document.querySelector("#play").addEventListener("click", function() {
 	video.play();
 	console.log("Play Video");
+	let volumeOut = document.querySelector("#volume").innerHTML = (video.volume*100) + "%"
+
 });
 
 document.querySelector("#pause").addEventListener("click", function() {
